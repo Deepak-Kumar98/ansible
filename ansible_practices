@@ -1,0 +1,533 @@
+devops@ansible-controller:~$ history
+    1  history
+    2  ansible --version
+    3  sudo apt-get update
+    4  sudo apt-get install software-properties-common
+    5  sudo apt-add-repository --yes --update ppa:ansible/ansible
+    6  sudo apt-get install ansible
+    7  history
+    8  cd /etc/ansible/
+    9  ls -l
+   10  cat hosts
+   11  cd
+   12  echo $HOME
+   13  cd /home/devops
+   14  pwd
+   15  ls -l
+   16  cp -pr /etc/ansible/* /home/devops/
+   17  ls -l
+   18  cat ansible.cfg
+   19  ansible-config init --disabled > ansible.cfg
+   20  ls -l
+   21  cat ansible.cfg
+   22  clear
+   23  history
+   24  vi ansible.cfg
+   25  cp hosts myinv
+   26  cp hosts qainv
+   27  cp hosts prodinv
+   28  ls -l
+   29  vi myinv
+   30  ansible --inventory /home/devops/myinv -m ping -u devops --ask-pass
+   31  cat myinv
+   32  nsible --inventory /home/devops/myinv all -m ping -u devops --ask-pass
+   33  ansible --inventory /home/devops/myinv all -m ping -u devops --ask-pass
+   34  vi ansible.cfg
+   35  nano ansible.cfg
+   36  vi ansible.cfg
+   37  ansible --inventory /home/devops/myinv all -m ping -u devops --ask-pass
+   38  ansible --inventory /home/devops/myinv slave1 -m ping -u devops --ask-pass
+   39  nano ansible.cfg
+   40  ansible --inventory /home/devops/myinv slave1 -m ping -u devops --ask-pass
+   41  ansible --inventory /home/devops/myinv all -m ping -u devops --ask-pass
+   42  df -h
+   43  history
+   44  ansible --inventory /home/devops/myinv app -m shell -a "df -h /" -u devops --ask-pass
+   45  ansible --inventory /home/devops/myinv all -m shell -a "df -h /" -u devops --ask-pass
+   46  ansible --inventory /home/devops/myinv all -m shell -a "sudo apt update" -u devops --ask-pass
+   47  history
+   48  clear
+   49  ls -l /etc/ansible
+   50  pwd
+   51  ls -l
+   52  ansible --inventory /home/devops/myinv all -m shell -a "java -version" -u devops --ask-pass
+   53  ansible --inventory /home/devops/myinv all -m shell -a "java --version" -u devops --ask-pass
+   54  jav --version
+   55  java --version
+   56  ansible --inventory /home/devops/myinv all -m shell -a "df -h /" -u devops --ask-pass
+   57  sudo add-apt-repository ppa:openjdk-r/ppa
+   58  sudo apt-get update
+   59  sudo apt-get install -y fontconfig openjdk-17-jre openjdk-17-jdk
+   60  cd /usr/lib/jvm/java-17-openjdk-amd64
+   61  ls -l
+   62  cd ..
+   63  cd
+   64  java --version
+   65  ansible --inventory /home/devops/myinv all -m shell -a "java --version" -u devops --ask-pass
+   66  ansible ping -m all
+   67  ansible ping -m remote-vm1
+   68  ansible ping -m slave1
+   69  cat hosts
+   70  ansible ping -m 10.0.0.29
+   71  ansible --inventory /home/devops/myinv all -m ping -u devops --ask-pass
+   72  ansible doc-l
+   73  ansible doc -l
+   74  ansible-doc l-
+   75  ansible-doc -l
+   76  hjjjhdhd
+   77  clear
+   78  ansible-doc -l | grep file
+   79  ansible-doc ping
+   80  clear
+   81  histrory
+   82  history
+   83  ls -l
+   84  cat myinv
+   85  ansible --inventory /home/devops/myinv all -m copy -a "src=/home/devops/prodinv dest=/home/devops" -u devops --ask-pass
+   86  ls -l
+   87  ansible --inventory /home/devops/myinv all -m file -a "path=/home/devops/naresh.txt state=touch" -u devops --ask-pass
+   88  clear
+   89  ls -l
+   90  cat myinv
+   91  clear
+   92  vi plyabook.yaml
+   93  ansible-playbook --inventory /home/devops/myinv plyabook.yaml --syntax-check
+   94  vi plyabook.yaml
+   95  echo "set paste" > $HOME/.vimrc
+   96  vi plyabook.yaml
+   97  echo "set paste" > $HOME/.vimrc
+   98  ansible-playbook --inventory /home/devops/myinv plyabook.yaml --syntax-check
+   99  vi plyabook.yaml
+  100  echo "set paste" > $HOME/.vimrc
+  101  ansible-playbook --inventory /home/devops/myinv plyabook.yaml --syntax-check
+  102  vi plyabook.yaml
+  103  ansible-playbook --inventory /home/devops/myinv plyabook.yaml --syntax-check
+  104  vi plyabook.yaml
+  105  ansible-playbook --inventory /home/devops/myinv plyabook.yaml --syntax-check
+  106  vi plyabook.yaml
+  107  ansible-playbook --inventory /home/devops/myinv plyabook.yaml --syntax-check
+  108  history
+  109  clear
+  110  history
+  111  ansible-playbook --inventory /home/devops/myinv plyabook.yaml --syntax-check
+  112  ansible-playbook --inventory /home/devops/myinv plyabook.yaml -u devops --ask-pass
+  113  vi plyabook.yaml
+  114  ansible-playbook --inventory /home/devops/myinv plyabook.yaml --syntax-check
+  115  ansible-playbook --inventory /home/devops/myinv plyabook.yaml -u devops --ask-pass
+  116  vi plyabook.yaml
+  117  ansible-playbook --inventory /home/devops/myinv plyabook.yaml -u devops --ask-pass
+  118  vi plyabook.yaml
+  119  ansible-playbook --inventory /home/devops/myinv plyabook.yaml --syntax-check
+  120  ansible-playbook --inventory /home/devops/myinv plyabook.yaml -u devops --ask-pass
+  121  clear
+  122  vi plyabook.yaml
+  123  ls -l
+  124  vi plyabook.yaml
+  125  ansible-playbook --inventory /home/devops/myinv plyabook.yaml -u devops --ask-pass
+  126  ls -l
+  127  vi plyabook.yaml
+  128  ansible-playbook --inventory /home/devops/myinv plyabook.yaml -u devops --ask-pass
+  129  history
+  130  clear
+  131  ansible-playbook --inventory /home/devops/myinv plyabook.yaml -u devops --ask-pass
+  132  clear
+  133  history
+  134  ls -l /tmp
+  135  ls -l
+  136  ansible-playbook --inventory /home/devops/myinv plyabook.yaml -u devops --ask-pass
+  137  vi apache.yaml
+  138  ansible-playbook --inventory /home/devops/myinv apache.yaml -u devops --ask-pass
+  139  apache2 -v
+  140  ps -ef|grep apache2
+  141  ls -l /tmp
+  142  ansible -i /home/devops/myinv all -m setup -u devops -k
+  143  history
+
+devops@ansible-controller:~$ vi cond.yaml
+devops@ansible-controller:~$ ansible-playbook --inventory /home/devops/myinv cond.yaml -u devops --ask-pass
+SSH password:
+
+PLAY [cond] ************************************************************************************************************
+
+TASK [Gathering Facts] *************************************************************************************************
+ok: [10.0.0.38]
+ok: [10.0.0.29]
+
+TASK [install a package on Ubuntu] *************************************************************************************
+ok: [10.0.0.38]
+ok: [10.0.0.29]
+
+TASK [install a package on Centos] *************************************************************************************
+skipping: [10.0.0.29]
+skipping: [10.0.0.38]
+
+PLAY RECAP *************************************************************************************************************
+10.0.0.29                  : ok=2    changed=0    unreachable=0    failed=0    skipped=1    rescued=0    ignored=0
+10.0.0.38                  : ok=2    changed=0    unreachable=0    failed=0    skipped=1    rescued=0    ignored=0
+
+devops@ansible-controller:~$
+
+
+
+- name: cond
+  hosts: all
+  become: yes
+  become_user: root
+  vars:
+    pckgname: vim
+  tasks:
+    - name: "install a {{pckgname}} on Ubuntu"
+      when: ansible_distribution == "Ubuntu"
+      apt:
+        update_cache: yes
+        name: "{{pckgname}}"
+        state: present
+    - name: "install a {{pckgname}} on Centos"
+      when: ansible_distribution == "Centos"
+      yum:
+        update_cache: yes
+        name: "{{pckgname}}"
+        state: present
+
+devops@ansible-controller:~$ ansible-playbook --inventory /home/devops/myinv cond.yaml -u devops --ask-pass
+SSH password:
+
+PLAY [cond] ************************************************************************************************************
+TASK [Gathering Facts] *************************************************************************************************
+ok: [10.0.0.38]
+ok: [10.0.0.29]
+
+TASK [install a vim on Ubuntu] *****************************************************************************************
+ok: [10.0.0.29]
+ok: [10.0.0.38]
+
+TASK [install a vim on Centos] *****************************************************************************************
+skipping: [10.0.0.29]
+skipping: [10.0.0.38]
+
+PLAY RECAP *************************************************************************************************************
+10.0.0.29                  : ok=2    changed=0    unreachable=0    failed=0    skipped=1    rescued=0    ignored=0
+10.0.0.38                  : ok=2    changed=0    unreachable=0    failed=0    skipped=1    rescued=0    ignored=0
+
+—---------------------------------------------------------------------------------------------------------------------------
+
+devops@ansible-controller:~$ ansible-playbook --inventory /home/devops/myinv cond.yaml --extra-vars "pckgname=git" -u devops --ask-pass
+SSH password:
+
+PLAY [cond] ************************************************************************************************************
+
+TASK [Gathering Facts] *************************************************************************************************
+ok: [10.0.0.38]
+ok: [10.0.0.29]
+
+TASK [install a git on Ubuntu] *****************************************************************************************
+ok: [10.0.0.29]
+ok: [10.0.0.38]
+
+TASK [install a git on Centos] *****************************************************************************************
+skipping: [10.0.0.29]
+skipping: [10.0.0.38]
+
+PLAY RECAP *************************************************************************************************************
+10.0.0.29                  : ok=2    changed=0    unreachable=0    failed=0    skipped=1    rescued=0    ignored=0
+10.0.0.38                  : ok=2    changed=0    unreachable=0    failed=0    skipped=1    rescued=0    ignored=0
+
+devops@ansible-controller:~$ vi task1.yaml
+
+- name: "task-1 on Ubuntu"
+  apt:
+    update_cache: yes
+    name: git
+    state: present
+- name: "create a file"
+  file:
+    path: /tmp/deepak1.txt
+    state: touch
+
+devops@ansible-controller:~$ vi task2.yaml
+
+- name: "task-2 on CentOS"
+  yum:
+    update_cache: yes
+    name: git
+    state: present
+- name: "create a file"
+  file:
+    path: /tmp/deepak2.txt
+    state: touch
+
+devops@ansible-controller:~$ vi resultt.yaml
+- name: call task from another yaml file
+  hosts: all
+  become: yes
+  become_user: root
+  tasks:
+    - name: "call task from ubuntu task1.yaml"
+      when: ansible_distribution == "Ubuntu"
+      include_tasks: /home/devops/task1.yaml
+    - name: "call task from centos task2.yaml"
+      when: ansible_distribution == "Centos"
+      include_tasks: /home/devops/task2.yaml
+
+
+
+
+
+
+devops@ansible-controller:~$ ansible-playbook -i myinv result.yaml -u devops -k
+SSH password:
+
+PLAY [call task from another yaml file] *********************************************************************************************
+
+TASK [Gathering Facts] **************************************************************************************************************
+ok: [10.0.0.38]
+ok: [10.0.0.29]
+
+TASK [call task from ubuntu] ********************************************************************************************************
+included: /home/devops/task1.yaml for 10.0.0.29, 10.0.0.38
+
+TASK [task-1 on Ubuntu] *************************************************************************************************************
+ok: [10.0.0.38]
+ok: [10.0.0.29]
+
+TASK [create a file] ****************************************************************************************************************
+changed: [10.0.0.38]
+changed: [10.0.0.29]
+
+TASK [call task from centos] ********************************************************************************************************
+skipping: [10.0.0.29]
+skipping: [10.0.0.38]
+
+PLAY RECAP **************************************************************************************************************************
+10.0.0.29                  : ok=4    changed=1    unreachable=0    failed=0    skipped=1    rescued=0    ignored=0
+10.0.0.38                  : ok=4    changed=1    unreachable=0    failed=0    skipped=1    rescued=0    ignored=0
+
+
+
+—--------------------------------------------------Ansible Roles—---------------------------------------------------
+
+mkdir roles-example
+  237  ll
+  238  ls -l
+  239  cd roles_example
+  240  cd roles-example
+  241  ls -l
+  242  mkdir install-git
+  243  mkdir install-httpd
+  244  mkdir install-telnet
+  245  ls -l
+  246  mkdir install-git/tasks
+  247  mkdir install-httpd/tasks
+  248  mkdir install-telnet/tasks
+  249  cd ..
+  250  tree roles-example/
+  251  pwd
+  252  cd roles-example/
+  253  ll
+  254  mkdir roles
+  255  mv install-* roles/
+  256  ll
+  257  cd ..
+  258  ls -l
+  259  tree roles-example/
+  260  ansible-playbook -i ../hosts install-packages.yml
+  261  cd roles-example/
+  262  cd ..
+  263  vi install-packages.yml
+  264  ansible-playbook -i ../hosts install-packages.yml
+  265  vi install-packages.yml
+  266  ansible-playbook -i ../hosts install-packages.yml
+  267  ansible-playbook --inventory /home/devops/myinv install-packages.yaml -u devops --ask-pass
+  268  ansible-playbook --inventory /home/devops/roles-example install-packages.yaml -u devops --ask-pass
+  269  ansible-playbook --inventory /home/devops/roles-example/roles install-packages.yaml -u devops --ask-pass
+  270  cd roles-example/
+  271  cd task
+  272  cd roles
+  273  cd tasks
+  274  ls -l
+  275  cd install-git
+  276  ls -l
+  277  cd tasks/
+  278  vi main.yml
+- name: install git
+  package:
+    name: git
+    state: present
+
+  279  cd ..
+  280  cd install-httpd
+  281  cd tasks/
+  282  vi main.yml
+- name: install httpd
+  package:
+    name: apache2
+    state: present
+
+  283  cd ..
+  284  cd install-telnet
+  285  cd tasks
+  286  vi main.yml
+- name: install telnet
+  package:
+    name: telnet
+    state: present
+
+  287  cd
+  288  ansible-playbook --inventory /home/devops/roles-example/roles install-packages.yaml -u devops --ask-pass
+  289  ansible-playbook -i ../hosts install-packages.yml
+  290  tree roles-example
+  291  cd roles-example/
+  292  pwd
+  293  ls -l
+  294  vi install-pkg.yml
+  295  ansible-playbook --inventory /home/devops/roles-example install-pkg.yml -u devops --ask-pass
+  296  cd roles/
+  297  cd task
+  298  ls -l
+  299  cd install-git
+  300  rm main.yml
+  301  ls -l
+  302  cd task
+  303  rm main.yml
+  304  ls -l
+  305  cd tasks
+  306  rm main.yml
+  307  vi main.yaml
+- name: install git
+  package:
+    name: git
+    state: present
+
+  308  cd ..
+  309  cd install-httpd
+  310  cd tasks
+  311  rm main.yml
+  312  vi main.yaml
+- name: install httpd
+  package:
+    name: apache2
+    state: present
+
+  313  cd ..
+  314  cd install-telnet
+  315  cd tasks
+  316  rm main.yml
+  317  vi main.yaml
+- name: install telnet
+  package:
+    name: telnet
+    state: present
+
+  318  cd
+  319  cd roles-example/
+  320  tree roles-example
+  321  tree roles-example/
+  322  cd
+  323  tree roles-example/
+  324  cd roles-example/
+  325  ls -l
+  326  rm install-pkg.yml
+  327  vi install-pkg.yaml
+- name: install all required packages
+  hosts: all
+  gather_facts: no
+  roles:
+    - install-git
+    - install-httpd
+    - install-telnet
+
+  328  ansible-playbook --inventory /home/devops/roles-example install-pkg.yaml -u devops --ask-pass
+  329  vi install-pkg.yaml
+  330  ansible-playbook --inventory /home/devops/roles-example install-pkg.yaml -u devops --ask-pass
+  331  vi install-pkg.yaml
+  332  ansible-playbook -i ../hosts install-pkg.yaml
+  333  ansible-playbook -i ../hosts install-pkg.yaml -u devops --ask-pass
+  334  vi install-pkg.yaml
+  335  ansible-playbook -i ../hosts install-pkg.yaml -u devops --ask-pass
+  336  clear
+  337  history
+  338  ansible-playbook -i ../hosts install-pkg.yaml -u devops --ask-pass
+  339  vi install-pkg.yaml
+  340  cd roles-example/
+  341  ansible-playbook -i ../hosts install-pkg.yaml -u devops --ask-pass
+  342  ls -l
+  343  cd roles/
+  344  ls -l
+  345  cd install-git
+  346  ls -l
+  347  cd tasks/
+  348  ls -l
+  349  cd
+  350  cd roles-example/
+  351  ansible-playbook -i ../hosts install-pkg.yaml -u devops --ask-pass
+  352  ansible-playbook --inventory /home/devops/roles-example install-pkg.yaml -u devops --ask-pass
+  353  ansible-playbook -i ../hosts install-pkg.yaml -u devops --ask-pass
+  354  cd roles
+  355  cd install-httpd/
+  356  cd tasks/
+  357  ls -l
+  358  vi main.yaml
+  359  cd ..
+  360  ls -l
+  361  vi install-pkg.yaml
+  362  ansible-playbook -i ../hosts install-pkg.yaml -u devops --ask-pass
+  363  vi install-pkg.yaml
+  364  cd roles/
+  365  ls -l
+  366  cd install-httpd/
+  367  ls -l
+  368  cd tasks/
+  369  cd -l
+  370  ls -l
+  371  vi main.yaml
+  372  cd ..
+  373  ansible-playbook -i ../hosts install-pkg.yaml -u devops --ask-pass
+  374  cd roles/
+  375  ls -l
+  376  cd install-httpd
+  377  cd tasks/
+  378  vi main.yaml
+  379  cd ..
+  380  ansible-playbook -i ../hosts install-pkg.yaml -u devops --ask-pass
+  381  history
+devops@ansible-controller:~/roles-example$
+
+devops@ansible-controller:~$ tree roles-example
+roles-example
+├── install-pkg.yaml
+└── roles
+    ├── install-git
+    │   └── tasks
+    │       └── main.yaml
+    ├── install-httpd
+    │   └── tasks
+    │       └── main.yaml
+    └── install-telnet
+        └── tasks
+            └── main.yaml
+
+8 directories, 4 files
+devops@ansible-controller:~$
+
+devops@ansible-controller:~/roles-example$ ansible-playbook -i ../hosts install-pkg.yaml -u devops --ask-pass
+SSH password:
+
+PLAY [install all required packages] ************************************************************************************************
+
+TASK [install-git : install git] ****************************************************************************************************
+ok: [10.0.0.38]
+ok: [10.0.0.29]
+
+TASK [install-httpd : install httpd] ************************************************************************************************
+ok: [10.0.0.38]
+ok: [10.0.0.29]
+
+TASK [install-telnet : install telnet] **********************************************************************************************
+ok: [10.0.0.38]
+ok: [10.0.0.29]
+
+PLAY RECAP **************************************************************************************************************************
+10.0.0.29                  : ok=3    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0
+10.0.0.38                  : ok=3    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0
+
+
